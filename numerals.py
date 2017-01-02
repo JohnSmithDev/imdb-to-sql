@@ -4,11 +4,11 @@
 def rntoi(numeral_string):
 	"""roman numeral to decimal integer conversion function."""
 	if not numeral_string:
-		return None
+		return 0
 	d = { "I" : 1, "V" : 5, "X" : 10, "L" : 50, "C" : 100, "D" : 500, "M" : 1000 }
 	for ch in numeral_string:
 		if ch not in d:
-			return None
+			return 0
 	sum = 0
 	lower_sum = 0
 	last = numeral_string[0]
