@@ -1,5 +1,6 @@
 # Raw Data
 db_dump/
+imdb-list/
 
 # Cached Files
 *.cache

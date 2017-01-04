@@ -13,11 +13,11 @@ class Database:
 	host 		= "127.0.0.1"			# database host
 	user 		= "postgres"			# database username
 	password 	= "postgres"			# database password
-	clear_old_db = True				# clear old database information if exists
+	clear_old_db = True					# clear old database information if exists
 
 # general options
 class Options:
-	list_dir 			= "..\imdb-list-v2"	# directory of the imdb list files
+	list_dir 			= ".\imdb-list"	# directory of the imdb list files
 	file_extension 		= ".list"		# file extension for the imdb list files
 	query_debug 		= False			# show log of all sql queries at construction time
 	show_progress 		= True			# show progress (at all)
