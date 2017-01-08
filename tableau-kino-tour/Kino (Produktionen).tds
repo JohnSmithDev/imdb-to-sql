@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10100.16.1103.2343                               -->
+<datasource formatted-name='federated.0y47sq91mai1if1govfbe04xydbq' inline='true' source-platform='win' version='10.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <connection class='federated'>
+    <named-connections>
+      <named-connection caption='localhost' name='postgres.08cmyar1o8azvj19esdr90q7toaa'>
+        <connection authentication='username-password' class='postgres' dbname='imdb_data' odbc-native-protocol='yes' port='5432' server='localhost' username='postgres' />
+      </named-connection>
+    </named-connections>
+    <relation connection='postgres.08cmyar1o8azvj19esdr90q7toaa' name='productions' table='[public].[productions]' type='table' />
+    <metadata-records>
+      <metadata-record class='column'>
+        <remote-name>idproductions</remote-name>
+        <remote-type>3</remote-type>
+        <local-name>[idproductions]</local-name>
+        <parent-name>[productions]</parent-name>
+        <remote-alias>idproductions</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>10</precision>
+        <contains-null>false</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>title</remote-name>
+        <remote-type>130</remote-type>
+        <local-name>[title]</local-name>
+        <parent-name>[productions]</parent-name>
+        <remote-alias>title</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>8190</width>
+        <contains-null>true</contains-null>
+        <cast-to-local-type>true</cast-to-local-type>
+        <collation flag='0' name='LEN_RUS' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>year</remote-name>
+        <remote-type>3</remote-type>
+        <local-name>[year]</local-name>
+        <parent-name>[productions]</parent-name>
+        <remote-alias>year</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>10</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>number</remote-name>
+        <remote-type>3</remote-type>
+        <local-name>[number]</local-name>
+        <parent-name>[productions]</parent-name>
+        <remote-alias>number</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>10</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>episode_title</remote-name>
+        <remote-type>130</remote-type>
+        <local-name>[episode_title]</local-name>
+        <parent-name>[productions]</parent-name>
+        <remote-alias>episode_title</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>8190</width>
+        <contains-null>true</contains-null>
+        <cast-to-local-type>true</cast-to-local-type>
+        <collation flag='0' name='LEN_RUS' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>season</remote-name>
+        <remote-type>3</remote-type>
+        <local-name>[season]</local-name>
+        <parent-name>[productions]</parent-name>
+        <remote-alias>season</remote-alias>
+        <ordinal>6</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>10</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>episode_number</remote-name>
+        <remote-type>3</remote-type>
+        <local-name>[episode_number]</local-name>
+        <parent-name>[productions]</parent-name>
+        <remote-alias>episode_number</remote-alias>
+        <ordinal>7</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>10</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>rating</remote-name>
+        <remote-type>5</remote-type>
+        <local-name>[rating]</local-name>
+        <parent-name>[productions]</parent-name>
+        <remote-alias>rating</remote-alias>
+        <ordinal>8</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>17</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>votes</remote-name>
+        <remote-type>3</remote-type>
+        <local-name>[votes]</local-name>
+        <parent-name>[productions]</parent-name>
+        <remote-alias>votes</remote-alias>
+        <ordinal>9</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>10</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>budget</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[budget]</local-name>
+        <parent-name>[productions]</parent-name>
+        <remote-alias>budget</remote-alias>
+        <ordinal>10</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>19</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>box_office_gross</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[box_office_gross]</local-name>
+        <parent-name>[productions]</parent-name>
+        <remote-alias>box_office_gross</remote-alias>
+        <ordinal>11</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>19</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>opening_weekend</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[opening_weekend]</local-name>
+        <parent-name>[productions]</parent-name>
+        <remote-alias>opening_weekend</remote-alias>
+        <ordinal>12</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>19</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_BIGINT&quot;</attribute>
+          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SBIGINT&quot;</attribute>
+        </attributes>
+      </metadata-record>
+    </metadata-records>
+  </connection>
+  <aliases enabled='yes' />
+  <column caption='Einspielergebnisse j/n?' datatype='string' name='[Calculation_1050746117325828096]' role='dimension' type='nominal'>
+    <calculation class='tableau' formula='IIF(ISNULL([box_office_gross]) OR &#13;&#10;        ISNULL([budget]) OR &#13;&#10;        ISNULL([year]), &#13;&#10;    &quot;Nein&quot;, &#13;&#10;    &quot;Ja&quot;)' />
+  </column>
+  <column caption='Titel (inkl. Jahr)' datatype='string' name='[Calculation_1050746117330501633]' role='dimension' type='nominal'>
+    <calculation class='tableau' formula='[title] + &quot; (&quot; + STR([year]) + &quot;)&quot;' />
+  </column>
+  <column aggregation='None' caption='Jahrzehnt' datatype='integer' name='[Jahr (bin)]' role='dimension' type='ordinal'>
+    <calculation class='bin' decimals='1' formula='[year]' peg='0' size='10' />
+  </column>
+  <column caption='Anzahl Filme/Serien' datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+    <calculation class='tableau' formula='1' />
+  </column>
+  <column caption='Einspielergebnis' datatype='integer' name='[box_office_gross]' role='measure' type='quantitative' />
+  <column caption='Budget' datatype='integer' name='[budget]' role='measure' type='quantitative' />
+  <column caption='Folge' datatype='integer' name='[episode_number]' role='dimension' type='ordinal' />
+  <column caption='Folgentitel' datatype='string' name='[episode_title]' role='dimension' type='nominal' />
+  <column aggregation='Sum' caption='Produktions ID' datatype='integer' name='[idproductions]' role='dimension' type='ordinal' />
+  <column caption='Zahl' datatype='integer' name='[number]' role='dimension' type='ordinal' />
+  <column caption='Eröffnungswochenende' datatype='integer' name='[opening_weekend]' role='measure' type='quantitative' />
+  <column caption='Bewertung' datatype='real' name='[rating]' role='measure' type='quantitative' />
+  <column aggregation='Sum' caption='Staffel' datatype='integer' name='[season]' role='dimension' type='ordinal' />
+  <column caption='Titel' datatype='string' name='[title]' role='dimension' type='nominal' />
+  <column caption='Anzahl Bewertungen' datatype='integer' name='[votes]' role='measure' type='quantitative' />
+  <column caption='Jahr' datatype='integer' name='[year]' role='dimension' type='quantitative' />
+  <column-instance column='[Jahr (bin)]' derivation='None' name='[none:Jahr (bin):ok]' pivot='key' type='ordinal' />
+  <group caption='Action (Jahrzehnt)' hidden='true' name='[Action (Jahrzehnt)]' name-style='unqualified' user:auto-column='sheet_link'>
+    <groupfilter function='crossjoin'>
+      <groupfilter function='level-members' level='[Jahr (bin)]' />
+    </groupfilter>
+  </group>
+  <layout dim-ordering='alphabetic' dim-percentage='0.557778' measure-ordering='alphabetic' measure-percentage='0.442222' show-structure='true' />
+  <style>
+    <style-rule element='mark'>
+      <encoding attr='color' field='[none:Jahr (bin):ok]' type='palette'>
+        <map to='#33608c'>
+          <bucket>191</bucket>
+        </map>
+        <map to='#6d669f'>
+          <bucket>192</bucket>
+        </map>
+        <map to='#a968a3'>
+          <bucket>193</bucket>
+        </map>
+        <map to='#b81840'>
+          <bucket>201</bucket>
+        </map>
+        <map to='#c93c42'>
+          <bucket>200</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>%null%</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>0</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>1</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>2</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>3</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>4</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>5</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>6</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>7</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>9</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>10</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>20</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>21</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>36</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>50</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>71</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>164</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>172</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>178</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>180</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>181</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>182</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>183</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>186</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>187</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>188</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>189</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>190</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>202</bucket>
+        </map>
+        <map to='#d3d3d3'>
+          <bucket>211</bucket>
+        </map>
+        <map to='#d96e93'>
+          <bucket>194</bucket>
+        </map>
+        <map to='#dc5547'>
+          <bucket>199</bucket>
+        </map>
+        <map to='#eb6e47'>
+          <bucket>198</bucket>
+        </map>
+        <map to='#ee8e44'>
+          <bucket>197</bucket>
+        </map>
+        <map to='#f6ba57'>
+          <bucket>196</bucket>
+        </map>
+        <map to='#f77e7b'>
+          <bucket>195</bucket>
+        </map>
+      </encoding>
+    </style-rule>
+  </style>
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+  </semantic-values>
+  <field-sort-info field-sort-order-type='custom-order'>
+    <field-sort-custom-order field='idproductions' />
+    <field-sort-custom-order field='title' />
+    <field-sort-custom-order field='year' />
+    <field-sort-custom-order field='number' />
+    <field-sort-custom-order field='episode_title' />
+    <field-sort-custom-order field='season' />
+    <field-sort-custom-order field='episode_number' />
+    <field-sort-custom-order field='rating' />
+    <field-sort-custom-order field='votes' />
+    <field-sort-custom-order field='budget' />
+    <field-sort-custom-order field='box_office_gross' />
+    <field-sort-custom-order field='opening_weekend' />
+  </field-sort-info>
+</datasource>
